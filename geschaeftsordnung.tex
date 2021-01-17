@@ -1,0 +1,896 @@
+%!TEX TS-program = xelatex
+\documentclass[10pt,a4paper]{scrartcl}  
+
+% ---------- Definitely used ----------
+
+%Fontspec - xetex standard
+\usepackage{fontspec}
+
+%proper language processung
+\usepackage[ngerman]{babel}
+
+%geometry, very usefull
+\usepackage{geometry}
+
+% ------ Might be of use somtimes -----
+
+%math stuff
+\usepackage{amsmath}
+
+% ----------- What is this? -----------
+\usepackage{xltxtra,xunicode}
+
+
+
+% ---------- Global Formatting --------
+
+% Clause format:
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{6pt plus 2pt minus 1pt}
+
+% Page format:
+\pagestyle{plain}  
+
+% table format:
+% packages pandoc uses for tables
+\usepackage{longtable, booktabs}
+
+% aligns tables to the left
+\setlength{\LTleft}{2em}
+
+% Images
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+
+
+% make lists pretty
+\providecommand{\tightlist}{%
+\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+
+% Margins
+\geometry{a4paper,top=3cm,bottom=3cm,left=3cm,right=3cm}
+
+\usepackage[juratotoc]{scrjura}
+
+
+% Custop section counters for protocol
+% \setcounter{secnumdepth}{2}
+% \counterwithout{subsection}{section}
+% \renewcommand\thesection{\Roman{section}
+% \renewcommand\theClause{title=§\arabic{subsection}
+% \makeatletter
+% \renewcommand{\autodot}{}% Remove all end-of-counter dots
+% \makeatother
+
+\usepackage{enumitem}
+\setenumerate{label=\roman*. }
+
+\renewcommand{\thesection}{\Roman{section}}
+
+\RedeclareSectionCommand[
+  runin=false,
+  afterindent=false,
+  beforeskip=2\baselineskip,
+  afterskip=.3\baselineskip]{section}
+
+% Heading styles:
+% These commands keep the koma system from making stupid sans serif section headings
+%\setkomafont{title}{\rmfamily\mdseries\upshape\normalsize}
+%\setkomafont{sectioning}{\rmfamily\mdseries\upshape\normalsize}
+%\setkomafont{descriptionlabel}{\rmfamily\mdseries\upshape\normalsize}
+
+% fixing section title ovelapping with "TOP"
+%\usepackage[titles]{tocloft}
+%\addtolength{\cftsecnumwidth}{1cm}
+%\renewcommand{\cftsecfont}{\bfseries \sffamily}
+
+% TOC Heading
+% \addto\captionsgerman{
+%   \renewcommand{\contentsname}%
+%     {Inhaltsverzeichnis}%
+% }
+% this could be considered changing
+%\setkomafont{section}{\large}
+%\setkomafont{subsection}{\normalsize}
+
+% Moves floats to the top of the page (used for the signing field)
+% Makes problems with tables
+%\makeatletter
+%\setlength{\@fptop}{0pt}
+%\makeatother
+
+% set up hyperref
+\usepackage[breaklinks=true]{hyperref}
+\hypersetup{colorlinks,%
+citecolor=black,%
+filecolor=black,%
+linkcolor=black,%
+urlcolor=blue}
+\usepackage{url}
+
+%The Title 
+\title{\LARGE Geschäftsordnung des Studentischen Konvents der Universität Würzburg}
+% emtying date so it does not show up
+\date{}
+
+
+\begin{document}
+
+\maketitle
+
+\begin{figure}[h]
+	\includegraphics[width=\textwidth]{logo.png}
+\end{figure}
+
+
+\vspace{2cm}
+
+{\centering \Large \sffamily in der Fassung vom 27.11.18 mit der letzen Änderung vom 02.10.2019}
+
+\pagebreak
+
+\setcounter{tocdepth}{4}
+\tableofcontents
+
+\pagebreak
+
+
+\section{Rede-, Antrags-, Vorschlags- und
+Stimmrecht}\label{rede--antrags--vorschlags--und-stimmrecht}
+
+\begin{contract}
+
+\Clause{title=Stimmrecht und
+Stimmrechtsübertragungen}\label{stimmrecht-und-stimmrechtsuebertragungen}
+
+Jedes Konventsmitglied hat Stimmrecht im Studentischen Konvent. Eine
+schriftliche Stimmrechtsübertragung auf jedes beliebige andere
+Konventsmitglied für einzelne Sitzungen oder Teile von Sitzungen ist
+möglich. Jedes anwesende Konventsmitglied kann nur eine
+Stimmrechtsübertragung annehmen. Stimmrechtsübertragungen sind der
+vorsitzenden Person vor Beginn oder während der Sitzung in schriftlicher
+Form und eigenhändig unterschrieben vorzulegen.
+
+Alternativ können Stimmrechtsübertragungen als digitale Kopie des
+unterschriebenen Dokuments bis zum Beginn der Sitzung per elektronischer Post
+(E-Mail) der vorsitzenden Person übermittelt werden. Hierbei hat das Mitglied
+dafür Sorge zu tragen, dass die Übertragung zugestellt wurde.
+
+
+\Clause{title=Rede- Antrags- und
+Vorschlagsrecht}\label{rede--antrags--und-vorschlagsrecht}
+
+Alle Mitglieder des Studentischen Konvents haben Rede-, Antrags- und
+Vorschlagsrecht und können Anträge zur Geschäftsordnung stellen. Alle
+Studierenden der Julius-Maximilians Universität Würzburg haben Rede-,
+Antrags- und Vorschlagsrecht. Anderen Personen kann das Rederecht auf
+Antrag erteilt werden.
+
+\end{contract}
+
+\section{Wahlen}\label{wahlen}
+
+\begin{contract}
+
+
+\Clause{title=Allgemeines}\label{allgemeines}
+
+Die Wahl der vorsitzenden Person und der Mitglieder der Sprecherinnen- und
+Sprecherrates sowie dessen Vorsitz wird nach den §§45 -- 47 der Grundordnung der
+Julius-Maximilians Universität durchgeführt.
+
+Der Studentische Konvent kann den vertretenden Personen der Studierenden im
+Senat Vorschläge für die Benennung von Kommissionsmitgliedern machen; die Wahl
+der Vorschläge erfolgt nach §8.
+
+Die Besetzung der Referate erfolgt ebenfalls nach §8.
+
+
+\Clause{title=Rücktritt von Neuwahl}\label{ruxfccktritt-von-neuwahl}
+
+Die vorsitzende Person oder ihre Stellvertretung und die sieben vom
+Studentischen Konvent gewählten Mitglieder des Sprecherinnen- und
+Sprecherrates sowie alle weiteren vom Studentischen Konvent gewählten
+Personen können von ihrem Amt zurücktreten. Im Falle einer vorzeitigen
+Ausscheidung aus dem Amt ist für den Rest der Amtszeit eine Nachwahl
+binnen zweier Wochen durchzuführen.
+
+
+\Clause{title=Konstruktives Misstrauensvotum}\label{konstruktives-misstrauensvotum}
+
+  Der Studentische Konvent kann jeder von ihm gewählten Person das
+  Misstrauen nur dadurch aussprechen, dass er mit der Mehrheit seiner
+  Mitglieder eine*n Nachfolger*in für das zu besetzende Amt wählt. Einem
+  Team kann nur in seiner Gesamtheit das Misstrauen ausgesprochen
+  werden, als Nachfolger*in ist hier auch eine Einzelperson möglich.
+  
+	Der Antrag auf ein konstruktives Misstrauensvotum unter Nennung
+  eines*r Kandidat*in oder mehrerer Kandidat*innen für die Nachfolge
+  muss von mindestens einem Viertel der Mitglieder des Studentischen
+  Konvents unterstützt werden und eine Woche vor der Sitzung der
+  vorsitzenden Person vorliegen und von dieser in die Einladung
+  aufgenommen werden. Ein Initiativantrag ist ausdrücklich
+  ausgeschlossen.
+     
+	Der in Absatz (2) genannte Antrag kann mehrere Wahlvorschläge enthalten;
+  der Studentische Konvent kann zudem während der Behandlung des Antrags
+  mit je einem Viertel seiner Mitglieder weitere Kandidat*innen
+  vorschlagen. In jedem Fall ist ein*e Kandidat*in gewählt, wenn sie
+  oder er die Mehrheit der Mitglieder auf sich vereint. Es wird geheim
+  gewählt.
+     
+  Anträge auf ein konstruktives Misstrauensvotum, die nicht den
+  Voraussetzungen genügen, werden nicht auf die Tagesordnung gesetzt.
+     
+  Für die Abwahl der vorsitzenden Person des Studentischen Konvents und
+  ihres*r Stellvertreter*in und der Mitglieder sowie der vorsitzenden
+  Person des Sprecherinnen- und Sprecherrats gemäß Grundordnung gilt
+  ebenfalls das Quorum sowie die obengenannten Voraussetzungen und
+  Fristen für das Misstrauensvotum.
+
+
+\Clause{title=Vorschlagsliste}\label{vorschlagsliste}
+
+Die vorsitzende Person eröffnet die Liste der vorgeschlagenen Personen
+und schließt sie, wenn keine weiteren Vorschläge vorliegen. Die Liste
+der vorgeschlagenen Personen ist bis zur Abstimmung jederzeit auf
+Verlangen von fünf Konventsmitgliedern erneut zu öffnen. Vor Beginn der
+Abstimmung ist die Liste der vorgeschlagenen Personen zu verlesen.
+
+
+\Clause{title=Personalbefragung und
+Personaldebatte}\label{personalbefragung-und-personaldebatte}
+
+Auf Verlangen eines Konventsmitglieds ist eine Personalbefragung
+durchzuführen. Ebenso ist auf Verlangen eines Konventsmitglieds eine
+Personaldebatte unter Ausschluss der Kandidat*innen durchzuführen. Die
+Dauer von Personalbefragung und -debatte kann auf Antrag begrenzt
+werden. Personaldebatten sind nichtöffentlich durchzuführen. Ein Antrag
+auf Öffentlichkeit ist nicht möglich.
+
+
+\Clause{title=Wahl von Referaten und Vorschlägen für Kommissionsmitglieder
+}\label{wahl-von-referaten-und-kommissionsmitgliedern}
+
+Gewählt werden: 
+\begin{enumerate}
+\item 
+	Vorschläge für Mitglieder der
+Kommissionen des Senats, der Universitätsleitung (UL) oder der
+Erweiterten Universitätsleitung (EUL) sowie die Servicezentren
+Professional School of Education (PSE) und Innovatives Lehren und
+Studieren (ZiLS).
+\item 
+	Eine studentische Frauenbeauftragte und eine*n
+Gleichstellungsbeauftragte*n. 
+\item 
+	Sowie Vorschläge für stellvertretende
+Mitglieder bzw. Stellvertreter*innen für i. und ii.; es muss eine
+stellvertretende studentische Frauenbeauftragte gewählt werden.
+
+\end{enumerate}
+
+Für
+jedes Referat wird eine Person oder ein gemeinsam antretendes Team als
+Referatsleitung gewählt. Ein solches Team wird als einzelner
+Wahlvorschlag behandelt.
+
+Es wird eine Vorschlagsliste nach §6
+erstellt.
+
+Gewählt ist bzw. sind entsprechend der Anzahl der zu
+besetzenden Posten: 
+\begin{enumerate}
+\item Ein Wahlvorschlag für einen Vorschlag für
+(stellvertretenende) Mitglieder, eine*n (stellvertretende*n)
+studentische*n Beauftragte*n, wenn er die absolute Mehrheit der Stimmen
+der Mitglieder des Studentischen Konvents auf sich vereint. In der
+Stichwahl genügt die relative Mehrheit. 
+\item Ein Wahlvorschlag für die
+Besetzung eines Referates im ersten Wahlgang, wenn er die absolute
+Mehrheit der Mitglieder des Studentischen Konvents auf sich vereint. In
+der Stichwahl genügt die relative Mehrheit.
+\item Bei Stimmengleichheit
+findet eine Stichwahl statt; die Vorschlagsliste wird nicht neu
+eröffnet. Bei einer erneuten Stimmengleichheit entscheidet das von der
+die Wahl leitenden Person zu ziehende Los.
+\item Umfasst die
+Vorschlagsliste ausschließlich einen Vorschlag, beziehen sich i. und ii.
+auf die Mehrheit der Ja-Stimmen gegen die Nein-Stimmen; anderenfalls
+werden die Nein-Stimmen als ungültig gezählt. Leere Stimmzettel zählen
+in jedem Fall als Enthaltung. Bei Stimmgleichheit gilt ein Vorschlag als
+abgelehnt.
+\end{enumerate}
+
+Dieser Paragraph findet bei allen Wahlen, für die keine
+gesonderte Regelung gilt, Anwendung.
+
+
+\Clause{title=Der Sprecherinnen- und Sprecherrat
+und Referate}\label{der-sprecherinnen--und-sprecherrat}
+
+Alle Aufgaben des Sprecherinnen- und Sprecherrat sind Ressorts zugeteilt Diese
+werden jeweils von einem Mitglied des Sprecherinnen- und Sprecherrats geleitet.
+Ausgenommen sind die Studentischen Senator\*innen. Der Ressortzuschnitt wird
+vom Studentischen Konvent per Beschluss festgelegt. Dieser Beschluss benötigt
+eine Zwei-Drittel-Mehrheit.
+
+Der Sprecherinnen- und Sprecherrat bestimmt die Besetzung der Ressortleitungen
+selbst.
+
+Ein Referat wird im studentischen Konvent beantragt und mit einer
+Zwei-Drittel-Mehrheit beschlossen. Dabei werden die Aufgabengebiete des Referats
+abschließend festgelegt. Die in der letzten Legislaturperiode bestehenden
+Referate bleiben bestehen. Die Auflösung eines Referats kann nur durch eine
+Zwei-Drittel-Mehrheit im Studentischen Konvent beschlossen werden.
+
+Die Wahl der Referatsleitungen erfolgt nach und wird in der konstituierenden
+Sitzung durchgeführt. Die zu wählenden Referatsleitungen sind vom Sprecherinnen-
+und Sprecherrat in der ersten Juniwoche auszuschreiben. Wird für ein Referat
+keine Leitung gewählt, übernimmt diese Aufgabe der Sprecherinnen- und
+Sprecherrat. Wird die Einrichtung eines neuen Referats beschlossen, so ist die
+Wahl der Referatsleitung für die unmittelbar nachfolgende Sitzung
+hochschulöffentlich auszuschreiben.
+
+Die Amtszeit der Referatsleitungen beginnt mit dem neuen
+Wintersemester und beträgt ein Jahr.
+
+Jedes Referat hat ein Mitglied des Sprecherinnen-und Sprecherrats
+als Pat*in. Mindestens einmal im Semester nehmen diese Pat*innen an
+einer Sitzung ihres Referats teil.
+   
+Sämtliche Referatsleitungen des Studentischen Konvents legen zum Ende
+ihrer Amtszeit dem neu gewählten Studentischen Konvent einen
+Rechenschaftsbericht vor. In diesem berichten sie über die Tätigkeit
+des Referats des letzten akademischen Jahres. Der Bericht ist
+schriftlich bis spätestens zwei Wochen vor der ersten ordentlichen
+Sitzung einzureichen. Außerdem soll die Referatsleitung des letzten
+akademischen Jahres in der ersten ordentlichen Sitzung des
+Studentischen Konvents anwesend sein und für Rückfragen zur Verfügung
+stehen. Den Referatsleitungen ist darüber hinaus Gelegenheit zu geben,
+den Bericht persönlich vorzustellen. Hat die Referatsleitung im Lauf
+des akademischen Jahres gewechselt, gilt dieser Absatz für die zum
+jeweiligen Zeitpunkt amtierende Referatsleitung. Der Bericht hat
+sachlich zu erfolgen und alle Veranstaltungen, Veröffentlichungen,
+Aktionen usw. des jeweiligen Referats zu enthalten.
+
+\end{contract}
+
+
+\section{Gang der Verhandlung}\label{gang-der-verhandlung}
+
+\begin{contract}
+
+
+\Clause{title=Allgemeines}\label{allgemeines-1}
+
+  Der Studentische Konvent ist von der vorsitzenden Person mindestens
+  zweimal im Semester, nach Möglichkeit zu Beginn und gegen Ende der
+  Vorlesungszeit, einzuberufen.
+
+  Die vorsitzende Person beruft den Studentischen Konvent unter Angabe
+  der Tagesordnung schriftlich ein. Die Mitglieder des Studentischen
+  Konvents können auch mittels elektronischer Post (E-Mail) eingeladen
+  werden. Die Frist der Einberufung beträgt mindestens eine Woche. In
+  Fällen besonderer Dringlichkeit kann die vorsitzende Person die Frist
+  abkürzen und auch mündlich oder fernmündlich einberufen. Die
+  Mitglieder des Sprecherinnen- und Sprecherrats sowie der*die
+  Protokollant*in sind gesondert zu laden. Die Einladung ist darüber
+  hinaus unmittelbar hochschulöffentlich zur Verfügung zu stellen.
+
+  Die vorsitzende Person des Studentischen Konvents ist verpflichtet,
+  auf Verlangen von mehr als einem Viertel der Mitglieder des Gremiums
+  innerhalb einer Frist von zwei Wochen zu einer Sitzung zu laden.
+  Erfolgt diese Ladung nicht, ist jedes andere Konventsmitglied
+  berechtigt, fristgerecht zu einer Sitzung zu laden. Nach Stattfinden
+  dieser Sitzung liegt das Laderecht wieder bei der vorsitzenden Person.
+  Eventuelle weitere nach Satz 2 erfolgte Ladungen sind rückwirkend
+  ungültig.
+
+  Die vorsitzende Person ist für die Ordnung verantwortlich und hat laut
+  Versammlungsgesetz § 7 Hausrecht. Die vorsitzende Person kann die
+  Person, die vom Verhandlungsgegenstand abschweift, mit Nennung des
+  Namens zur Sache rufen. Ist die Person während einer Sitzung dreimal
+  zur Sache gerufen und beim zweiten Male auf die Folgen eines dritten
+  Rufes zur Sache hingewiesen worden, so ist ihr von der vorsitzenden
+  Person das Wort zu entziehen. In der Debatte zum selben
+  Verhandlungsgegenstand hat diese Person kein Rederecht mehr. Eine
+  Person, die im Laufe einer Sitzung dreimal zur Ordnung gerufen wird,
+  kann von der vorsitzenden Person des Sitzungsraumes verwiesen werden.
+
+  Die Sitzungen des Studentischen Konvents sind grundsätzlich
+  hochschulöffentlich. Ausgenommen hiervon sind Wahlen,
+  Personalangelegenheiten sowie Tagesordnungspunkte, für die die
+  Nichtöffentlichkeit per Antrag an die Geschäftsordnung beschlossen
+  wurde. Die protokollierende Person und die Mitglieder des
+  Sprecherinnen- und Sprecherrats sind grundsätzlich von der
+  Nichtöffentlichkeit ausgenommen. Über weitere Ausnahmen beschließt der
+  Studentische Konvent im Einzelfall.
+
+  Es zählt zu den Pflichten der vorsitzenden Person sicherzustellen,
+  dass für die Sitzung die folgenden Dinge bereitgestellt sind:
+
+\begin{enumerate}
+\item
+  Stimmkarten mit Name des Mitglieds sowie Name der zugehörigen
+  Gruppierung für alle Mitglieder
+\item
+  Stimmzettel, falls Wahlen für die entsprechende Sitzung ausgeschrieben
+  wurden
+\item
+  ein Projektor
+\item
+  Verlängerungskabel und Mehrfachsteckdosen, um eine Stromversorgung für
+  alle Mitglieder zu gewährleisten.
+\end{enumerate}
+
+
+\Clause{title=Tagesordnung}\label{tagesordnung}
+
+  Die Tagesordnung muss folgende Punkte enthalten:
+\begin{enumerate}[label=\alph*]
+	\tightlist
+\item Festlegung des*r
+  Protokollant*in
+\item Feststellung der Anwesenheit und der
+  Beschlussfähigkeit
+\item Genehmigung des Protokolls der vorangegangenen
+  Sitzung
+\item Genehmigung der Tagesordnung
+\item Bericht aus dem
+  Fachschaftenrat, den Kommissionen und Kollegialorganen sowie den
+  Ausschüssen des Studentischen Konvents und Möglichkeit zur Diskussion
+\item Bericht aus dem Sprecherinnen- und Sprecherrat und seinen Referaten
+  und Möglichkeit zur Diskussion
+\item Anträge
+\item Verschiedenes
+	\end{enumerate}
+
+  Die Tagesordnung ist von den Mitgliedern des Studentischen Konvents
+  mit einfacher Mehrheit zu genehmigen. Nach der Genehmigung der
+  Tagesordnung muss die vorsitzende Person dann eine Umstellung der
+  einzelnen Tagesordnungspunkte vornehmen, wenn diese Umstellung von
+  einer Mehrheit der anwesenden Mitglieder des Studentischen Konventes
+  genehmigt wird. Eine solche Umstellung kann per Antrag an die
+  Geschäftsordnung beantragt werden.
+
+
+\Clause{title=Beschlussfähigkeit}\label{beschlussfuxe4higkeit}
+
+
+
+  Die Beschlussfähigkeit des Studentischen Konvents wird zu Beginn der
+  Sitzung von der vorsitzenden Person festgestellt.
+
+  Der Studentische Konvent ist beschlussfähig, wenn sämtliche Mitglieder
+  ordnungsgemäß geladen sind und mehr als die Hälfte der Mitglieder
+  physisch oder per Stimmrechtsübertragung anwesend ist. Andernfalls
+  hebt die vorsitzende Person die Sitzung auf und beruft sie -- mit
+  einwöchiger Ladungsfrist -- unter Beibehaltung der Tagesordnung binnen
+  zweier Wochen neu ein; in diesem Fall ist der Studentische Konvent
+  ohne Rücksicht auf die Zahl der anwesenden Stimmberechtigten
+  beschlussfähig. Hierauf ist in der Einladung hinzuweisen. Schriftliche
+  Stimmrechtsübertragungen werden bei der Feststellung von Anwesenheit
+  und Stimmrecht von Mitgliedern mitberücksichtigt.
+
+  Der Studentische Konvent gilt sodann, auch wenn sich die Zahl der
+  anwesenden stimmberechtigten Mitglieder im Laufe der Sitzung
+  verringert, als beschlussfähig, solange nicht ein Mitglied die
+  Beschlussunfähigkeit geltend macht. Ist eine Angelegenheit wegen
+  Beschlussunfähigkeit zurückgestellt worden und wird das Gremium zur
+  Behandlung desselben Gegenstands erneut geladen, so ist es ohne
+  Rücksicht auf die Zahl der anwesenden Stimmberechtigten
+  beschlussfähig, wenn darauf in dieser Ladung hingewiesen worden ist.
+
+  Stimmberechtigt sind die bei der Eröffnung der Abstimmung anwesenden
+  stimmberechtigten Konventsmitglieder. Stimmrechtsübertragungen werden
+  berücksichtigt.
+
+
+
+\Clause{title=Dauer der Sitzungen}\label{dauer-der-sitzungen}
+
+
+
+
+  Die Sitzungen des Studentischen Konvents sind spätestens um 1.00 Uhr
+  zu beenden.
+
+  Ein begonnener Tagesordnungspunkt wird abgeschlossen. Besteht ein
+  Tagesordnungspunkt aus mehreren Unterpunkten, so gilt Satz 1 für jeden
+  Unterpunkt.
+
+  Der Studentische Konvent kann die Behandlung weiterer
+  Tagesordnungspunkte bzw. deren Unterpunkte nur mit
+  Zwei-Drittel-Mehrheit beschließen. Die der Abstimmung über die
+  Behandlung weiterer Tagesordnungspunkte vorangehende Debatte ist auf 5
+  Minuten zu beschränken.
+
+  Zur Behandlung verbleibender Tagesordnungspunkte und deren Unterpunkte
+	muss von der vorsitzenden Person gemäß §10 (2) der Geschäftsordnung eine
+  Folgesitzung einberufen werden. Diese findet spätestens zwei Wochen
+  nach der abgebrochenen Sitzung des Studentischen Konvents statt.
+
+	Für die Tagesordnung der Folgesitzung gilt §11 (1) Es können keine
+  Anträge gemäß §16 eingereicht werden.
+
+
+
+\Clause{title=Leitung der Sitzung}\label{leitung-der-sitzung}
+
+Mit Ausnahme der konstituierenden Sitzung eröffnet, leitet und
+schließt die vorsitzende Person die Sitzungen des Studentischen
+Konvents.
+
+Die vorsitzende Person wird auf eigenen Wunsch oder bei Verhinderung
+durch ihre*n Stellvertreter*in vertreten oder kann sich die Aufgaben mit ihr teilen.
+
+Bei Abwesenheit der vorsitzenden Person und ihres*r Stellvertreter*in
+kann ein beliebiges Mitglied des Studentischen Konvents die
+Sitzungsleitung übernehmen. Erfolgt Widerspruch, so ist eine Leitung des
+Studentischen Konvents für die aktuelle Sitzung mit einfacher Mehrheit
+zu wählen. Wird niemand gewählt, so gilt die Sitzung als aufgehoben und
+ist wie unter §12 (2) beschrieben neu zu laden.
+
+
+\Clause{title=Reihenfolge der Redner*innen}\label{reihenfolge-der-rednerinnen}
+
+Die vorsitzende Person führt eine Liste der Redner*innen und erteilt
+das Wort in der Reihenfolge der Meldungen, wobei Redner*innen, die
+sich zu diesem Verhandlungsgegenstand das erste Mal zu Wort melden,
+vorgezogen werden.
+
+Wenn auf eine direkte Frage eine direkte Antwort als sinnvoll
+erscheint, kann die vorsitzende Person abweichend von der Redeliste
+der gefragten Person unverzüglich eine einmalige Antwortmöglichkeit
+geben.
+
+Eine Zwischenfrage wird durch Kreuzen der Arme angezeigt. Die
+vorsitzende Person fragt den*die Redner*in, ob er*sie die
+Zwischenfrage zulässt.
+
+
+\Clause{title=Fristgemäße Anträge}\label{fristgemuxe4uxdfe-antruxe4ge}
+
+Anträge an den Studentischen Konvent sind fristgemäß, wenn sie drei
+Werktage vor der Sitzung bis spätestens 17:00 Uhr schriftlich bei der
+vorsitzenden Person des Studentischen Konvents eingereicht wurden. Der
+Tag der Absendung der Anträge und der Tag der Sitzung werden nicht
+mitgerechnet. Die vorsitzende Person leitet die Anträge noch am Tag des
+Fristablaufs per elektronischer Post (E-Mail) in einem allgemein
+gebräuchlichen Format an alle Mitglieder weiter. Außerdem stellt er*sie
+alle eingehenden Anträge unmittelbar nach Fristablauf
+hochschulöffentlich zur Verfügung. Anträge sind zu begründen, dies kann
+auch mündlich zu Beginn der Behandlung des Antrags erfolgen.
+
+
+\Clause{title=Initiativanträge}\label{initiativantruxe4ge}
+
+Nach Antragsschluss können nur noch Initiativanträge in die Sitzung des
+Studentischen Konvents eingebracht werden. Zum Zeitpunkt der Antragstellung muss
+der Antragstext schriftlich vorliegen. Sie bedürfen der Unterstützung durch
+mindestens fünf Mitglieder des Studentischen Konvents. Über ihre Behandlung
+entscheidet der Studentische Konvent mit der einfachen Mehrheit der anwesenden
+Mitglieder.
+
+
+\Clause{title=Änderungsanträge}\label{uxe4nderungsantruxe4ge}
+
+Änderungsanträge sind schriftlich bei der vorsitzenden Person des
+Studentischen Konvents vor Beginn der Abstimmung über den Antrag
+einzureichen. Auch sind Änderungsanträge von der antragstellenden Person
+den Mitgliedern des Studentischen Konvents schriftlich zu unterbreiten.
+Der*die Antragsteller*in des Antrags, zu dem Änderungsanträge vorliegen,
+kann die Übernahme von Änderungsanträgen erklären. Vor der Abstimmung
+über den Antrag muss über alle vorliegenden Änderungsanträge entschieden
+werden. Liegen konkurrierende Änderungsanträge vor, so gilt §19 (4).
+
+
+\Clause{title=Abstimmungen}\label{abstimmungen}
+
+Der Studentische Konvent beschließt die Annahme von Anträgen per
+Abstimmung.
+
+Der Studentische Konvent beschließt mit der Mehrzahl der abgegebenen
+Stimmen; Stimmenthaltung gelten als nicht abgegebene Stimmen. Bei
+Stimmengleichheit gilt der Antrag als abgelehnt.
+
+Vor Eröffnung der Abstimmung werden die zur Abstimmung stehenden
+Anträge verlesen, soweit sie den Konventsmitgliedern nicht schriftlich
+vorliegen.
+
+Liegen mehrere Anträge zur selben Sache vor, so wird über den weitest
+gehenden Antrag zuerst abgestimmt. Bei Finanzfragen ist über den am
+wenigsten weitgehenden Antrag zuerst abzustimmen. Die Abstimmung
+erfolgt grundsätzlich durch Handzeichen. Auf Antrag eines anwesenden
+Konventsmitglieds muss geheim abgestimmt werden.
+
+Während der Abstimmung kann niemand das Rederecht erhalten.
+
+Unmittelbar im Anschluss an eine Abstimmung muss das
+Abstimmungsergebnis auf Antrag von mindestens einem Viertel der
+anwesenden Konventsmitglieder nochmals überprüft werden.
+Gegebenenfalls ist die Abstimmung zu wiederholen.
+
+
+
+\Clause{title=Protokoll}\label{protokoll}
+
+Über die Sitzungen des Studentischen Konvents ist ein
+Verlaufsprotokoll anzufertigen.
+
+
+\begin{enumerate}
+\item
+  Der*die Protokollant*in wird jeweils in der ersten Sitzung des
+  Studentischen Konvents im Semester für die Dauer eines Semesters
+  gewählt.
+\item
+  Sofern sich keine Person gemäß der unter i. genannten Regelung findet
+  oder der*die Protokollant*in verhindert ist, wird die protokollierende
+  Person durch Losentscheid unter den anwesenden Mitgliedern oder durch
+  freiwillige Meldung vor Eröffnung der Sitzung durch die vorsitzende
+  Person bestimmt. Die Auswahl durch Los ist verpflichtend und kann nur
+  unter Angabe eines gewichtigen Grunds aufgehoben werden.
+\end{enumerate}
+
+Von der Protokollpflicht befreit sind Mitglieder des Sprecherinnen-
+und Sprecherrates, die vorsitzende Person und deren Stellvertreter*in
+sowie weitere Mitglieder des Studentischen Konvents, die in der
+laufenden Legislaturperiode bereits Protokoll geführt haben.
+
+Der*die Protokollant*in soll spätestens vierzehn Tage nach der
+Konventssitzung das Protokoll in sauber ausformulierter,
+maschinenlesbarer Form der vorsitzenden Person zukommen lassen. Das
+Protokoll wird, gegebenenfalls mit persönlichen Erklärungen dazu, mit
+der Einladung zur nächsten Sitzung verschickt. Es wird zusätzlich auch
+der vorsitzenden Person des Fachschaftenrats zugeschickt.
+
+In die Protokolle sind die Beschlüsse wörtlich aufzunehmen.
+
+Abstimmungsergebnisse sind im Protokoll zu vermerken. Bei deutlicher
+Mehrheit ist eine genaue Auszählung nicht nötig, es sei denn, dies
+wird von einem Mitglied verlangt.
+
+Jedes in der Sitzung anwesende Konventsmitglied hat das Recht, seine
+Auffassung zu die Sitzung betreffenden Angelegenheiten in einer
+schriftlich begründeten persönlichen Erklärung darzulegen. Die
+persönliche Erklärung ist dem Protokoll anzufügen.
+
+Zu Beginn der nächsten Sitzung muss das Protokoll mit einfacher
+Mehrheit genehmigt werden. Danach wird es von der vorsitzenden Person
+innerhalb einer Woche hochschulöffentlich zur Verfügung gestellt. Wird
+das Protokoll nicht genehmigt, erfolgt in der darauf folgenden Sitzung
+erneut eine Abstimmung über eine gegebenenfalls überarbeitete Fassung.
+Folgt in der laufenden Legislaturperiode keine Sitzung
+mehr, so ist das Protokoll alleine zu verschicken. Über am Ende der
+Legislaturperiode noch nicht beschlossene Protokolle beschließt der
+Studentische Konvent der nächsten Legislaturperiode, dafür sind die
+Protokolle dessen Mitgliedern mit der Sitzungseinladung zukommen zu
+lassen.
+
+\end{contract}
+
+
+\section{Verfahren bei
+Geschäftsordnungsanträgen}\label{verfahren-bei-geschuxe4ftsordnungsantruxe4gen}
+
+\begin{contract}
+
+
+\Clause{title=Äußerungen und Anträge zur
+Geschäftsordnung}\label{uxe4uuxdferungen-und-antruxe4ge-zur-geschuxe4ftsordnung}
+
+Äußerungen und Anträge zur Geschäftsordnung dürfen sich nur mit dem
+Gang der Verhandlung befassen.
+
+Äußerungen zur Geschäftsordnung sind insbesondere:
+\begin{enumerate}
+	\item ein Hinweis zur Geschäftsordnung,
+\item eine Anfrage zur Geschäftsordnung sowie 
+\item das Zurückziehen einer Anfrage oder eines Antrages.
+	\end{enumerate}
+
+Anträge zur Geschäftsordnung benötigen im Allgemeinen eine einfache
+Mehrheit der abgegebenen Stimmen zur Annahme. Es handelt sich dabei
+insbesondere um:
+
+
+\begin{enumerate}
+
+\item
+  Antrag auf Vertagung. Seine Annahme hat zur Folge, dass der Punkt
+  nicht weiter behandelt und auf die Tagesordnung der folgenden Sitzung
+  gesetzt wird.
+\item
+  Antrag auf Nichtbefassung. Seine Annahme hat zur Folge, dass der
+  (Unter-)Punkt nicht erörtert wird. Hierfür bedarf es einer
+  Zwei-Drittel-Mehrheit der Anwesenden. Die Sitzung wird mit dem
+  nächsten (Unter-)Punkt der Tagesordnung fortgesetzt.
+\item
+  Antrag auf Schließung der Debatte und sofortige Abstimmung.
+\item
+  Antrag auf Schließung der Redeliste. Nach Annahme des Antrags besteht
+  die einmalige Möglichkeit, sich noch auf die Redeliste setzen zu
+  lassen.
+\item
+  Antrag auf Beschränkung der Redezeit. Dieser Antrag muss unter Angabe
+  der Maximalredezeit pro Redebeitrag gestellt werden. Die
+Redezeit kann entweder für einen Verhandlungsgegenstand, einen
+Tagesordnungspunkt oder die restliche Sitzung beschränkt werden 
+\item
+	Antrag auf Verhandlungspause. Der Antrag muss unter Angabe der
+gewünschten Pausendauer gestellt werden. Die maximale Pausendauer
+beträgt 15 Minuten. Während einer Sitzung können maximal 4 Pausen
+beantragt werden. Längere oder weitere Pausen können mit einer
+Zwei-Drittel-Mehrheit beschlossen werden. 
+\item
+	Antrag auf
+Nichtöffentlichkeit. Dieser Antrag kann für die gesamte Sitzung,
+einzelne Tagesordnungspunkte oder Verhandlungsgegenstände gestellt
+werden.
+\item
+	Antrag auf Schließung der Sitzung. Seine Annahme hat zur Folge, dass die
+	Sitzung sofort beendet wird und nach §13 Absätze (4) und (5) eine Folgesitzung
+	einzuberufen ist. Hierfür bedarf es einer Zwei-Drittel-Mehrheit der
+	Anwesenden.
+\item
+	Antrag auf geheime Abstimmung.
+Dieser Antrag ist automatisch angenommen, eine Gegenrede ist nicht
+möglich.
+\end{enumerate}
+
+Eine Wortmeldung zur Geschäftsordnung erfolgt durch Aufheben
+beider Arme. Sie ist erst nach dem Ende des laufenden Redebeitrages,
+dann aber unmittelbar zu behandeln. Mehrere Geschäftsordnungsanträge
+werden in der Reihenfolge der Meldung behandelt. 
+
+Die unter Abs. (3) iii.-v. genannten Anträge zur Geschäftsordnung dürfen nicht
+direkt im Anschluss an einen eigenen Redebeitrag gestellt werden.
+
+Ein Antrag zur Geschäftsordnung ist angenommen, wenn kein Mitglied des
+Studentischen Konvents Widerrede einlegt. Die Widerrede kann formell oder
+inhaltlich erfolgen, eine inhaltliche Widerrede hat dabei Vorrang. Die
+inhaltliche Widerrede besteht aus einer kurzen Begründung, weshalb der Antrag
+abgelehnt werden sollte.
+
+\end{contract}
+
+
+\section{Ausschüsse}\label{ausschuxfcsse}
+
+\begin{contract}
+
+
+\Clause{title=Wahl der Ausschüsse}\label{wahl-der-ausschuxfcsse}
+
+Der Studentische Konvent kann zur Vorbereitung und zur Unterstützung
+seiner Arbeit und für Untersuchungen ständige oder nichtständige
+Ausschüsse einsetzen.
+
+Den Ausschüssen dürfen nicht weniger als fünf Mitglieder angehören.
+Sie müssen keine Mitglieder des Studentischen Konvents sein.
+
+Die Mitglieder der Ausschüsse sowie deren Vorsitzende werden gewählt.
+In den Ausschüssen sollten die verschiedenen Hochschulgruppen und
+Fachschaften des Studentischen Konvents vertreten sein.
+
+Treten gewählte Mitglieder aus einem Ausschuss zurück, so wählt der
+Studentische Konvent in der nächsten Sitzung entsprechend viele neue
+Mitglieder.
+
+Auf Beschluss des Studentischen Konvents kann, um den Beitritt
+weiterer Mitglieder zu ermöglichen, die Anzahl der Ausschussmitglieder
+nachträglich erhöht oder bei Rücktritten auf nicht weniger als 
+5 bzw. die Anzahl der noch aktiven Mitglieder verringert werden.
+
+
+
+\Clause{title=Stimmrecht}\label{stimmrecht}
+
+In den Ausschüssen haben alle Ausschussmitglieder Stimmrecht.
+
+
+\Clause{title=Beschlussfassung der
+Ausschüsse}\label{beschlussfassung-der-ausschuxfcsse}
+
+Die Ausschüsse halten das Ergebnis ihrer Arbeit in Form von
+schriftlichen Beschlüssen fest. Die Beschlüsse werden mit einfacher
+Mehrheit gefasst. Das Ergebnis der Abstimmung ist anzufügen.
+
+
+\Clause{title=Aufgaben und Rechte der
+Ausschüsse}\label{aufgaben-und-rechte-der-ausschuxfcsse}
+
+  Die dem Ausschuss vom Studentischen Konvent übertragenen Aufgaben sind
+  gewissenhaft und ohne Verzögerung zu erledigen. Über ihre Erledigung
+  ist dem Studentischen Konvent unverzüglich Bericht zu erstatten.
+
+  Die Ausschüsse können darüber hinaus über jeden in ihren
+  Arbeitsbereich fallenden Gegenstand verhandeln und Anträge im
+  Studentischen Konvent einbringen.
+
+
+
+\Clause{title=Sitzungen}\label{sitzungen}
+
+  Die Ausschüsse werden von ihrem*r Vorsitzenden einberufen.
+
+  Ein Ausschuss muss auf Verlangen von mindestens einem Viertel der
+  Ausschussmitglieder einberufen werden. VI Informationsveranstaltung
+
+\end{contract}
+
+\section{Informationsveranstaltung}\label{informationsveranstaltung}
+
+\begin{contract}
+
+\Clause{title=Einladung zur
+Informationsveranstaltung}\label{einladung-zur-informationsveranstaltung}
+
+Die vorsitzende Person lädt einmal im Semester alle Studierenden zu
+einer öffentlichen Informationsveranstaltung ein. Die Einladung ist
+öffentlich bekanntzugeben. Die Mitglieder des Studentischen Konvents,
+die gewählten Mitglieder des Sprecherinnen- und Sprecherrats, die
+studentischen Mitglieder im Senat sowie die Mitglieder der
+Fachschaftsvertretungen werden hierzu gesondert eingeladen. Die
+Einladung der Studierenden erfolgt unter Angabe einer Tagesordnung durch
+öffentlichen Aushang.
+
+
+\Clause{title=Ablauf der
+Informationsveranstaltung}\label{ablauf-der-informationsveranstaltung}
+
+
+
+
+  Die vorsitzende Person des Studentischen Konvents leitet die
+  Informationsveranstaltung oder trägt Sorge dafür, dass ein anderes
+  Mitglied, bevorzugt ihre Stellvertreter*in, die Veranstaltung leitet.
+
+  In der Informationsveranstaltung berichtet der Sprecherinnen- und
+  Sprecherrat den Studierenden über seine Tätigkeiten. Die Studierenden
+  haben die Möglichkeit, sich über die Arbeit ihrer Vertreter*innen in
+  den Gremien über laufende Projekte, Referate und Veranstaltungen zu
+  informieren und sich hierzu zu äußern.
+
+
+\end{contract}
+
+
+\section{Schlussbestimmungen}\label{schlussbestimmungen}
+
+\begin{contract}
+
+
+\Clause{title=Änderungen}\label{uxe4nderungen}
+
+Änderungen der Geschäftsordnung bedürfen sowohl einer absoluten
+Mehrheit aller Mitglieder des Konvents als auch eine
+Zwei-Drittel-Mehrheit aller anwesenden Stimmen.
+
+Anträge zur Änderung der Geschäftsordnung dürfen nicht als
+Initiativanträge gestellt werden.
+
+
+\Clause{title=Inkrafttreten}\label{inkrafttreten}
+
+Diese Geschäftsordnung tritt am Tage ihrer Annahme durch den
+Studentischen Konvent, am 27.11.2018, in Kraft.
+
+\end{contract}
+
+
+\end{document}
